@@ -1,0 +1,8 @@
+// for necessary COMENTS
+
+make this code for giving a suitable output whether the number is palindrome or not and write necessary comments on it for better clarity
+
+
+//
+
+agar me tumhe koi bhi code ese aadha adhura bhej raha hu to tumhe muje batana he ki tum iss direction me jaa rhe ho aur iske aage ye karoge to visualization se ye ho jayga

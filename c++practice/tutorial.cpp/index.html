@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Mobile Number Validation</title>
+</head>
+<body>
+  <form>
+    Mobile Number: 
+    <input type="text" id="id1"><br><br>
+    <input type="button" value="Submit" onclick="return myfun()">
+  </form>
+
+  <script>
+    function myfun() {
+      var a = document.getElementById("id1").value;
+      var mob = /^[6-9][0-9]{9}$/;
+
+      if (mob.test(a) == false) {
+        alert("Wrong input");
+        return false;
+      } else {
+        alert("Success");
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>
