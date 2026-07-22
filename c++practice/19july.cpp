@@ -14,9 +14,11 @@ int main() {
     }
     
     while(!dabba.empty()){
-        cout<<dabba.top()<<" "<<endl;
+        // while ke andr wali conditions bol rahi he jabtk andr ka galat na ho tabtak vo kaam karte raho
+        cout<<dabba.top()<<" ";
        dabba.pop();
     }
 
     return 0;
 }
+

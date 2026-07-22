@@ -1,81 +1,73 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Stack {
-    int arr[5];
-    int top;
+// class Stack {
+//     int arr[5];
+//     int top;
 
-public:
+// public:
 
-    Stack() {
-        top = -1;
-    }
+//     Stack() {
+//         top = -1;
+//     }
 
+//     // Insert element
+//     void push(int value) {
 
-    // Insert element
-    void push(int value) {
+//         if(top == 4) {
+//             cout << "Stack Overflow\n";
+//             return;
+//         }
 
-        if(top == 4) {
-            cout << "Stack Overflow\n";
-            return;
-        }
+//         top++;
+//         arr[top] = value;
+//     }
 
-        top++;
-        arr[top] = value;
-    }
+//     // Remove element
+//     void pop() {
 
+//         if(top == -1) {
+//             cout << "Stack Underflow\n";
+//             return;
+//         }
 
-    // Remove element
-    void pop() {
+//         cout << "Removed: " << arr[top] << endl;
+//         top--;
+//     }
 
-        if(top == -1) {
-            cout << "Stack Underflow\n";
-            return;
-        }
+//     // Show top element
+//     int peek() {
 
-        cout << "Removed: " << arr[top] << endl;
-        top--;
-    }
+//         if(top == -1)
+//             return -1;
 
+//         return arr[top];
+//     }
 
-    // Show top element
-    int peek() {
+//     // Display stack
+//     void display(){
 
-        if(top == -1)
-            return -1;
+//         for(int i=top;i>=0;i--){
+//             cout << arr[i] << endl;
+//         }
+//     }
+// };
 
-        return arr[top];
-    }
+// int main(){
 
+//     Stack s;
 
-    // Display stack
-    void display(){
+//     s.push(10);
+//     s.push(20);
+//     s.push(30);
+//     s.push(40);
 
-        for(int i=top;i>=0;i--){
-            cout << arr[i] << endl;
-        }
-    }
-};
+//     cout<<"Stack:\n";
+//     s.display();
 
+//     cout<<"Top element: ";
+//     cout<<s.peek();
 
-int main(){
-
-    Stack s;
-
-
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    s.push(40);
-
-
-    cout<<"Stack:\n";
-    s.display();
-
-
-    cout<<"Top element: ";
-    cout<<s.peek();
-
-    return 0;
-}
+//     return 0;
+// }
 
